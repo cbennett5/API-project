@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cbennett  API Playground</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="stripePay.js"></script>
+</head>
+<body>
+    <h1>Welcome to cbennett's test shop!</h1>
+    <p>
+        <div>Would you like to buy a gizmo?</div>
+        <img src="gizmo.jpg" alt="gizmo" height="100">
+        <button id="purchase_gizmo">Purchase </button>
+    </p>
+    <p>
+        <div>And what if I told you there was an even bigger gizmo?</div>
+        <img src="tesla.jpg" alt="gizmo-er" height="100">
+        <button id="purchase_tesla">Purchase </button>
+    </p>
+
+    <form> 
+        <label for="gizmo">Gizmo:</label> 
+        <select name="gizmo" id="gizmo"> 
+            <option value="0">Zero</option> 
+            <option value="1">One</option> 
+            <option value="2">Two</option> 
+            <option value="3">Three</option> 
+        </select>  
+        <br> 
+        <label for="tesla">Tesla:</label> 
+        <select name="tesla" id="tesla"> 
+            <option value="0">Zero</option> 
+            <option value="1">One</option> 
+            <option value="2">Two</option> 
+            <option value="3">Three</option> 
+        </select>  
+        <br><br> 
+        <input type="submit" value="Submit"> 
+      </form>  
+
+</body>
+</html>
